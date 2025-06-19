@@ -20,7 +20,7 @@ pipeline {
       steps {
         sh """
           \$JMETER_HOME/bin/jmeter -n \
-            -t performance_test.jmx \
+            -t summary_report.jmx \
             -l results.jtl \
             -Jjmeter.save.saveservice.output_format=xml
         """
